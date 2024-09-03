@@ -1,0 +1,12 @@
+# System files
+.DS_Store
+
+# PHP/Composer files and dependencies
+composer.phar
+vendor
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
