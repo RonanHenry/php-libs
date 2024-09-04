@@ -1,9 +1,17 @@
 # System files
 .DS_Store
 
+# Logs
+logs
+*.log
+.pnpm-debug.log*
+
 # PHP/Composer files and dependencies
 composer.phar
 vendor
+
+# Node dependencies
+node_modules
 
 # Editor directories and files
 .vscode/*

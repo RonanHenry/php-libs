@@ -1,0 +1,21 @@
+{
+  "name": "php-libs",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "format": "biome check --write --linter-enabled=false --no-errors-on-unmatched",
+    "lint": "biome lint --fix --no-errors-on-unmatched"
+  },
+  "author": "Ronan",
+  "license": "MIT",
+  "packageManager": "pnpm@9.9.0",
+  "engines": {
+    "node": ">=20.16.0",
+    "pnpm": ">=9.9.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3"
+  }
+}
