@@ -1,29 +1,29 @@
 {
-    "name": "rh/php-libs",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Ronan"
-        }
-    ],
-    "require-dev": {
-        "symplify/monorepo-builder": "^11.2"
-    },
-    "replace": {
-        "rh/first-package": "self.version",
-        "rh/lib": "self.version",
-        "rh/second-package": "self.version"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "autoload": {
-        "psr-4": {
-            "Rh\\FirstPackage\\": "packages/first-package/src/",
-            "Rh\\Lib\\": "lib/src/",
-            "Rh\\SecondPackage\\": "packages/second-package/src/"
-        }
-    },
-    "scripts": {
-        "mb": "./vendor/bin/monorepo-builder"
+  "name": "rh/php-libs",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ronan"
     }
+  ],
+  "require-dev": {
+    "symplify/monorepo-builder": "^11.2"
+  },
+  "replace": {
+    "rh/first-package": "self.version",
+    "rh/lib": "self.version",
+    "rh/second-package": "self.version"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Rh\\FirstPackage\\": "packages/first-package/src/",
+      "Rh\\Lib\\": "lib/src/",
+      "Rh\\SecondPackage\\": "packages/second-package/src/"
+    }
+  },
+  "scripts": {
+    "mb": "./vendor/bin/monorepo-builder"
+  }
 }

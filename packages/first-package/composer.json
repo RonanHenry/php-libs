@@ -1,19 +1,19 @@
 {
-    "name": "rh/first-package",
-    "description": "First PHP package",
-    "type": "library",
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Rh\\FirstPackage\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Ronan"
-        }
-    ],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {}
+  "name": "rh/first-package",
+  "description": "First PHP package",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Rh\\FirstPackage\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Ronan"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {}
 }
