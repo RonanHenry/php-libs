@@ -1,4 +1,5 @@
 autoload
 biomejs
+lefthook
 preinstall
 symplify

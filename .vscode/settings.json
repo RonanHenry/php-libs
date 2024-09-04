@@ -2,6 +2,12 @@
   "biome.enabled": true,
   "cSpell.enabled": true,
   "editor.formatOnSave": true,
+  "editor.rulers": [
+    {
+      "column": 100,
+      "color": "#92929266"
+    }
+  ],
   "[json]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
