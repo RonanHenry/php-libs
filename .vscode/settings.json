@@ -1,5 +1,6 @@
 {
   "biome.enabled": true,
+  "cSpell.enabled": true,
   "editor.formatOnSave": true,
   "[json]": {
     "editor.defaultFormatter": "biomejs.biome"
