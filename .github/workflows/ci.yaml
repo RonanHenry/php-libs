@@ -12,20 +12,28 @@ jobs:
     strategy:
       matrix:
         versions:
-          - node: 20
+          - php: '8.3'
+            node: '20.17.0'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: Setup PHP ${{ matrix.versions.php }}
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.versions.php }}
+          coverage: xdebug
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-      - name: Setup node ${{ matrix.versions.node }}
+      - name: Setup Node ${{ matrix.versions.node }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.versions.node }}
           cache: pnpm
-      - name: Install node dependencies
+      - name: Install PHP dependencies
+        run: composer install
+      - name: Install Node dependencies
         run: pnpm install
       - name: Check for formatting and linting errors
-        run: pnpm biome ci .
+        run: composer sniff && pnpm biome ci .
       - name: Check for spelling errors
         run: pnpm check:spell

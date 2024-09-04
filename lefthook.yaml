@@ -1,5 +1,5 @@
 pre-commit:
   commands:
     format:
-      run: pnpm format {staged_files}
+      run: composer fix && pnpm format {staged_files}
       stage_fixed: true

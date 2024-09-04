@@ -1,5 +1,9 @@
 autoload
 biomejs
+codesniffer
 lefthook
+phpcbf
+phpcs
 preinstall
+squizlabs
 symplify

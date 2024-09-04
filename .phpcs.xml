@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="PHP_CodeSniffer"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
+  <description>The coding standard for this PHP repository</description>
+
+  <!-- Exclude any vendor file -->
+  <exclude-pattern>*/vendor/*</exclude-pattern>
+
+  <!-- Exclude file in the node dependencies -->
+  <exclude-pattern>*/node_modules/*</exclude-pattern>
+
+  <!-- Default options used when running a check -->
+  <arg name="basepath" value="." />
+  <arg name="extensions" value="php" />
+  <arg name="colors" />
+  <arg name="parallel" value="75" />
+  <arg value="np" />
+
+  <!-- Don't hide tokenizer exceptions -->
+  <rule ref="Internal.Tokenizer.Exception">
+    <type>error</type>
+  </rule>
+
+  <!-- Include the PEAR standard except some properties -->
+  <rule ref="PEAR">
+    <exclude name="PEAR.Commenting.FileComment" />
+  </rule>
+
+  <rule ref="Generic.Arrays.ArrayIndent">
+    <properties>
+      <property name="indent" value="2" />
+    </properties>
+  </rule>
+
+  <rule ref="PEAR.ControlStructures.MultiLineCondition">
+    <properties>
+      <property name="indent" value="2" />
+    </properties>
+  </rule>
+
+  <rule ref="PEAR.Formatting.MultiLineAssignment">
+    <properties>
+      <property name="indent" value="2" />
+    </properties>
+  </rule>
+
+  <rule ref="PEAR.Functions.FunctionCallSignature">
+    <properties>
+      <property name="indent" value="2" />
+    </properties>
+  </rule>
+
+  <rule ref="PEAR.Functions.FunctionDeclaration">
+    <properties>
+      <property name="indent" value="2" />
+    </properties>
+  </rule>
+
+  <rule ref="PEAR.WhiteSpace.ObjectOperatorIndent">
+    <properties>
+      <property name="indent" value="2" />
+    </properties>
+  </rule>
+
+  <rule ref="PEAR.WhiteSpace.ScopeClosingBrace">
+    <properties>
+      <property name="indent" value="2" />
+    </properties>
+  </rule>
+
+  <rule ref="PEAR.WhiteSpace.ScopeIndent">
+    <properties>
+      <property name="indent" value="2" />
+      <property name="tabIndent" value="false" />
+      <property name="exact" value="true" />
+    </properties>
+  </rule>
+</ruleset>

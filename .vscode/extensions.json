@@ -1,6 +1,8 @@
 {
   "recommendations": [
     "biomejs.biome",
+    "bmewburn.vscode-intelephense-client",
+    "obliviousharmony.vscode-php-codesniffer",
     "streetsidesoftware.code-spell-checker",
     "streetsidesoftware.code-spell-checker-french",
     "streetsidesoftware.code-spell-checker-french-reforme"
