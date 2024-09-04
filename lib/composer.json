@@ -1,0 +1,19 @@
+{
+    "name": "rh/lib",
+    "description": "Lib code to share across all packages",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rh\\Lib\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ronan"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {}
+}

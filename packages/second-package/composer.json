@@ -1,0 +1,19 @@
+{
+    "name": "rh/second-package",
+    "description": "Second package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rh\\SecondPackage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ronan"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {}
+}
