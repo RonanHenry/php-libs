@@ -1,9 +1,7 @@
 {
   "biome.enabled": true,
   "cSpell.enabled": true,
-  "phpCodeSniffer.standard": "Automatic",
-  "phpCodeSniffer.autoExecutable": true,
-  "phpCodeSniffer.exclude": ["**/vendor/**", "**/node_modules/**"],
+  "php-cs-fixer.executablePath": "${workspaceFolder}/vendor/bin/php-cs-fixer",
   "editor.formatOnSave": true,
   "editor.rulers": [
     {
@@ -11,16 +9,16 @@
       "color": "#92929266"
     }
   ],
-  "[json]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
   "[javascript]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
-  "[typescript]": {
+  "[json]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
   "[php]": {
-    "editor.defaultFormatter": "obliviousharmony.vscode-php-codesniffer"
+    "editor.defaultFormatter": "junstyle.php-cs-fixer"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
   }
 }

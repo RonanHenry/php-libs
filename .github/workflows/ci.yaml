@@ -12,8 +12,8 @@ jobs:
     strategy:
       matrix:
         versions:
-          - php: '8.3'
-            node: '20.17.0'
+          - php: "8.3"
+            node: "20.17.0"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -34,6 +34,6 @@ jobs:
       - name: Install Node dependencies
         run: pnpm install
       - name: Check for formatting and linting errors
-        run: composer sniff && pnpm biome ci .
+        run: composer check && pnpm biome ci .
       - name: Check for spelling errors
         run: pnpm check:spell

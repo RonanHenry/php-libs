@@ -7,6 +7,7 @@ logs
 .pnpm-debug.log*
 
 # PHP/Composer files and dependencies
+.php-cs-fixer.cache
 composer.phar
 vendor
 

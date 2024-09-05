@@ -1,6 +1,7 @@
 autoload
 biomejs
 codesniffer
+friendsofphp
 lefthook
 phpcbf
 phpcs
